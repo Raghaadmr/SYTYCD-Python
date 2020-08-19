@@ -1,4 +1,4 @@
-####################### DO NOT MODIFY THIS CODE ########################
+####################### DO NOT MODIFY
 menu = {
     "original cupcake": 2,
     "signature cupcake": 2.750,
@@ -12,7 +12,7 @@ signature_price = 2.750
 
 ############################# Start Here! ##############################
 cupcake_shop_name = "Get Baked"
-signature_flavors = ['tuna', 'salmon', 'red herring']
+signature_flavors = ['vanilla', 'revelvet', 'chocolate']
 order_list = []
 
 
@@ -21,7 +21,7 @@ def print_menu():
     Print the items in the menu dictionary.
     """
     print("Our menu:")
-    for item in cupcake_menu:
+    for item in signature_flavors:
         print("- \"%s\" (KD %s)" % (item, menu[item]))
 
 
@@ -33,7 +33,7 @@ def print_originals():
     """
     print("Our original flavor cupcakes (KD %s each):" % original_price)
     for item in original_flavors:
-    print("- \"%s\"" % item)
+      print("- \"%s\"" % item)
 
 
 def print_signatures():
@@ -68,7 +68,7 @@ def get_order():
     while order.lowercase() != "exit":
         if is_valid_order(order):
             order_list.append(order)
-        order = input()
+        order = input("What's your order? (Enter the exact spelling of the item you want. Type 'Exit' to end your order.)\n")
 
     return order_list
 
