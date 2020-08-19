@@ -1,4 +1,4 @@
-####################### DO NOT MODIFY
+
 menu = {
     "original cupcake": 2,
     "signature cupcake": 2.750,
